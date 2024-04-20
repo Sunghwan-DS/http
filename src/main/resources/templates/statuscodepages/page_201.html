@@ -2,12 +2,12 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>200 요청페이지</title>
+    <title>201 요청페이지</title>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
         function getRequest() {
             $.ajax({
-                url: '/api/statuscodes/200',
+                url: '/api/statuscodes/201',
                 type: 'GET',
                 contentType: 'application/json',
                 success: function(response) {
@@ -21,7 +21,7 @@
     </script>
 </head>
 <body>
-    <h1>200 요청페이지</h1>
+    <h1>201 요청페이지</h1>
     <button onclick="getRequest()">
         GET 요청
     </button>
