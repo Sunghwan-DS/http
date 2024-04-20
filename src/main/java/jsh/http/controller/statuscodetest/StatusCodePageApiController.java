@@ -23,4 +23,10 @@ public class StatusCodePageApiController {
         return ResponseEntity.created(location)
                              .body(MyResponse.of("201"));
     }
+
+    @GetMapping("/202")
+    public ResponseEntity<?> getRequest_202() {
+        return ResponseEntity.accepted()
+                             .body(MyResponse.of("202"));
+    }
 }
